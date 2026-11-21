@@ -21,7 +21,7 @@
   .nav-links a:hover{color:#fff}
   .hero-body{display:flex;flex-wrap:wrap;gap:3rem;align-items:center;padding:3.5rem 0 4.5rem}
   .hero-text{flex:1 1 520px;min-width:0}
-  .eyebrow{margin:0;font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  .eyebrow{margin:0;line-height:1.7;font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
   .hero h1{margin:.75rem 0 0;font-weight:700;font-size:clamp(2.6rem,7vw,3.75rem)}
   .tagline{margin:1.25rem 0 0;font-size:1.2rem;color:var(--on-navy);max-width:36rem}
   .meta{margin:.75rem 0 0;color:var(--on-navy-2)}
@@ -71,6 +71,7 @@
     .contact{padding:1.75rem}
     main h2{font-size:1.7rem}
     .about p{hyphens:auto;-webkit-hyphens:auto}
+    .eyebrow{font-size:.74rem;letter-spacing:.04em}
   }
 
   /* Shared bits */
