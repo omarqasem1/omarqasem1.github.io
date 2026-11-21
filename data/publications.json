@@ -1,5 +1,5 @@
 {
-  "_readme": "Publication list for publications.html. Entries with source 'auto' were added by the weekly update job. To hide a paper for good, delete it and add its DOI to exclude_dois.",
+  "_readme": "Publication list for publications.html. Entries with source 'auto' were added by the weekly update job. To hide a paper for good, delete it and add its DOI to exclude_dois. The bibtex field holds the publisher's own Cite -> BibTeX export, pasted unchanged; the Copy BibTeX button appears only for papers that have it.",
   "orcid": "0000-0003-4080-8672",
   "exclude_dois": [],
   "publications": [
@@ -123,7 +123,9 @@
       "topics": [
         "Observers & LPV"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@article{ABDULLAH20195541,\ntitle = {Full-order and reduced-order observers for linear parameter-varying systems with one-sided Lipschitz nonlinearities and disturbances using parameter-dependent Lyapunov function},\njournal = {Journal of the Franklin Institute},\nvolume = {356},\nnumber = {10},\npages = {5541-5572},\nyear = {2019},\nissn = {0016-0032},\ndoi = {https://doi.org/10.1016/j.jfranklin.2019.04.029},\nurl = {https://www.sciencedirect.com/science/article/pii/S0016003219303138},\nauthor = {Ali Abdullah and Omar Qasem},\nabstract = {In this study, H∞ full-order and reduced-order observers are designed for a class of linear parameter-varying (LPV) systems with one-sided Lipschitz nonlinearities and disturbances. Parameter-dependent Lyapunov function is used to analyze the robust stability of the proposed observers. Three practical examples are used to demonstrate the usefulness of the proposed observers. Simulation and experimental results indicate that the proposed observers work well.}\n}",
+      "bibtex_source": "ScienceDirect Export citation to BibTeX"
     },
     {
       "type": "conference",

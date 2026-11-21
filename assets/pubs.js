@@ -23,25 +23,6 @@
   }
   function slug(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, ''); }
 
-  function makeBibtex(p) {
-    if (p.bibtex) return p.bibtex;
-    var first = (p.authors.split(',')[0] || 'paper').trim().split(' ').pop();
-    var key = slug(first) + p.year + slug(p.title.split(' ')[0]);
-    var authors = p.authors.split(',').map(function (a) { return a.trim(); }).join(' and ');
-    var kind = p.type === 'journal' ? 'article' : p.type === 'conference' ? 'inproceedings' :
-      p.type === 'thesis' ? (p.degree === 'phd' ? 'phdthesis' : 'mastersthesis') : 'misc';
-    var school = p.type === 'thesis' ? p.venue.replace(/^.*?,\s*/, '') : '';
-    var lines = ['@' + kind + '{' + key + ',',
-      '  title = {' + p.title + '},',
-      '  author = {' + authors + '},',
-      school ? '  school = {' + school + '},' :
-      '  ' + (kind === 'article' ? 'journal' : (kind === 'inproceedings' ? 'booktitle' : 'howpublished')) + ' = {' + p.venue + '},',
-      '  year = {' + p.year + '}'];
-    if (p.doi) lines[lines.length - 1] += ',', lines.push('  doi = {' + p.doi + '}');
-    lines.push('}');
-    return lines.join('\n');
-  }
-
   function matches(p) {
     if (state.type !== 'all' && p.type !== state.type) return false;
     if (state.topic !== 'all' && (p.topics || []).indexOf(state.topic) < 0) return false;
@@ -62,7 +43,8 @@
     if (p.pdf) links.push('<a href="' + esc(p.pdf) + '" target="_blank" rel="noopener">PDF</a>');
     var btns = '';
     if (p.abstract) btns += '<button type="button" class="pub-btn" data-act="abs" data-i="' + i + '" aria-expanded="false">Abstract</button>';
-    btns += '<button type="button" class="pub-btn" data-act="bib" data-i="' + i + '">Copy BibTeX</button>';
+    // BibTeX is shown only when the publisher's own export is stored for this paper.
+    if (p.bibtex) btns += '<button type="button" class="pub-btn" data-act="bib" data-i="' + i + '">Copy BibTeX</button>';
     var badges = '';
     if (p.status && p.status !== 'published') badges += '<span class="badge badge-status">' + esc(p.status) + '</span>';
     if (p.award) badges += '<span class="badge badge-award">' + esc(p.award) + '</span>';
@@ -152,7 +134,7 @@
     if (b.dataset.act === 'abs') {
       var box = document.getElementById('abs-' + i), open = box.hidden;
       box.hidden = !open; b.setAttribute('aria-expanded', String(open));
-    } else if (b.dataset.act === 'bib') copy(makeBibtex(pubs[i]), b);
+    } else if (b.dataset.act === 'bib') copy(pubs[i].bibtex, b);
   });
   document.getElementById('f-q').addEventListener('input', function (e) { state.q = e.target.value.trim(); render(); });
   document.getElementById('f-year').addEventListener('change', function (e) { state.year = e.target.value; render(); });

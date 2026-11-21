@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Look for new papers, abstracts and BibTeX
+      - name: Look for new papers and abstracts
         run: python scripts/update_publications.py
 
       - name: Save changes

@@ -8,7 +8,7 @@ Omar Qasem's academic homepage. It's plain HTML for GitHub Pages, so there's no 
 |---|---|
 | `index.html` | Home page. Search for `EDIT:` to find what still needs filling in. |
 | `publications.html` | Publications page with search and filters. The list itself lives in `data/publications.json`. |
-| `data/publications.json` | All publications. A weekly job adds new papers from ORCID/OpenAlex, plus abstracts and BibTeX. |
+| `data/publications.json` | All publications. A weekly job adds new papers from ORCID/OpenAlex and their abstracts. |
 | `assets/pubs.js`, `assets/site.js` | Search/filters, dark mode, and fade-in effects. No need to edit. |
 | `scripts/update_publications.py`, `.github/workflows/update-publications.yml` | The weekly publication update (runs Mondays; run it any time from the Actions tab). |
 | `news.html` | News page, grouped by year. Instructions for adding an item are inside the file. |
@@ -53,7 +53,9 @@ Open a file on GitHub, click the pencil icon, edit, and commit. The live site up
 
 Open `data/publications.json`, copy one entry (from `{` to `},`), paste it at the top of the list, and edit the fields:
 `type` (journal / conference / preprint), `status` (published / accepted / in press), `year`, `title`, `authors`, `venue`, `details`, `doi`, `topics`.
-Optional: `award`, `arxiv`, `pdf`, `abstract`.
+Optional: `award`, `arxiv`, `pdf`, `abstract`, `bibtex`.
+
+`bibtex` must be the publisher's own export (IEEE Xplore: Cite This → BibTeX; ScienceDirect: Cite → Export citation to BibTeX), pasted unchanged. The "Copy BibTeX" button only appears for papers that have it.
 
 To hide an automatically added paper for good, delete its entry and put its DOI in `exclude_dois`.
 

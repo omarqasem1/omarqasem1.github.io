@@ -4,7 +4,8 @@
 Runs on GitHub Actions (see .github/workflows/update-publications.yml).
 1. Looks up all works linked to the ORCID iD in data/publications.json, via OpenAlex.
 2. Adds any work whose DOI (or title) is not already listed, marked source "auto".
-3. Fills in missing abstracts (from OpenAlex) and BibTeX (from doi.org).
+3. Fills in missing abstracts (from OpenAlex).
+BibTeX is never generated here: only the publisher's own Cite -> BibTeX export is stored, by hand.
 Only the Python standard library is used. Nothing else on the site is touched.
 """
 import json
@@ -145,7 +146,7 @@ def main():
         changed = True
         print("  + added:", entry["year"], title)
 
-    # 2) fill abstracts and BibTeX
+    # 2) fill abstracts
     for p in pubs:
         doi = norm_doi(p.get("doi"))
         if not doi:
@@ -160,14 +161,6 @@ def main():
                 p["abstract"] = abs_text
                 changed = True
                 print("  ~ abstract:", p["title"][:70])
-        if not p.get("bibtex"):
-            bib = get("https://doi.org/" + urllib.parse.quote(doi, safe="/"), accept="application/x-bibtex")
-            if bib and bib.lstrip().startswith("@"):
-                p["bibtex"] = bib.strip()
-                changed = True
-                print("  ~ bibtex:", p["title"][:70])
-            time.sleep(0.5)
-
     if changed:
         with open(DATA, "w", encoding="utf-8") as f:
             json.dump(db, f, ensure_ascii=False, indent=2)
