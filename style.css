@@ -36,7 +36,7 @@
   /* Sections */
   main section{padding-top:4rem}
   main h2{margin:0 0 1.5rem;font-weight:700;font-size:2rem}
-  .about p{max-width:52rem;margin:0 0 1rem;color:#2b3345;font-size:1.05rem}
+  .about p{max-width:52rem;margin:0 0 1rem;color:#2b3345;font-size:1.05rem;text-align:justify}
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.25rem}
   .card{background:var(--card);border-radius:14px;padding:1.75rem;box-shadow:0 1px 3px rgba(18,24,38,.08)}
   .card .num{margin:0;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:.9rem;color:var(--link)}
@@ -70,6 +70,7 @@
     .photo{flex-basis:100%;height:280px;order:-1;max-width:240px}
     .contact{padding:1.75rem}
     main h2{font-size:1.7rem}
+    .about p{hyphens:auto;-webkit-hyphens:auto}
   }
 
   /* Shared bits */
@@ -87,3 +88,4 @@
   .pub-section h2{display:flex;align-items:baseline;gap:.75rem}
   .count{font-family:Inter,sans-serif;font-size:1rem;font-weight:600;color:var(--muted)}
   footer.wrap{padding-top:2rem;padding-bottom:2rem}
+  .hero h1 .degree{font-weight:500;color:var(--on-navy)}
