@@ -11,7 +11,10 @@
       "authors": "S. Paudel, M. Davari, W. Gao, F. Blaabjerg, M. S. Sadabadi, M. Liserre, M. Karimi-Ghartemani, O. Qasem, K. Al-Haddad, T. Chai",
       "venue": "IEEE Journal of Emerging and Selected Topics in Industrial Electronics",
       "details": "accepted for publication",
-      "topics": ["Power systems", "ADP & RL"],
+      "topics": [
+        "Power systems",
+        "ADP & RL"
+      ],
       "source": "cv"
     },
     {
@@ -23,7 +26,11 @@
       "venue": "IEEE Transactions on Industrial Electronics",
       "details": "",
       "doi": "10.1109/TIE.2026.3679825",
-      "topics": ["Hybrid iteration", "ADP & RL", "Power systems"],
+      "topics": [
+        "Hybrid iteration",
+        "ADP & RL",
+        "Power systems"
+      ],
       "source": "cv"
     },
     {
@@ -35,7 +42,11 @@
       "venue": "IEEE Transactions on Industrial Electronics",
       "details": "vol. 72, no. 6, pp. 5867–5883",
       "doi": "10.1109/TIE.2024.3426038",
-      "topics": ["Hybrid iteration", "ADP & RL", "Power systems"],
+      "topics": [
+        "Hybrid iteration",
+        "ADP & RL",
+        "Power systems"
+      ],
       "source": "cv"
     },
     {
@@ -47,7 +58,11 @@
       "venue": "IEEE Transactions on Industrial Electronics",
       "details": "vol. 71, no. 6, pp. 6210–6220",
       "doi": "10.1109/TIE.2023.3292873",
-      "topics": ["Hybrid iteration", "ADP & RL", "Robotics & aerospace"],
+      "topics": [
+        "Hybrid iteration",
+        "ADP & RL",
+        "Robotics & aerospace"
+      ],
       "source": "cv"
     },
     {
@@ -59,7 +74,9 @@
       "venue": "IEEE Transactions on Automation Science and Engineering",
       "details": "vol. 21, no. 2, pp. 1214–1222",
       "doi": "10.1109/TASE.2023.3276369",
-      "topics": ["ADP & RL"],
+      "topics": [
+        "ADP & RL"
+      ],
       "source": "cv"
     },
     {
@@ -71,7 +88,12 @@
       "venue": "IEEE Transactions on Industrial Electronics",
       "details": "vol. 71, no. 1, pp. 834–845",
       "doi": "10.1109/TIE.2023.3247734",
-      "topics": ["Hybrid iteration", "ADP & RL", "Multi-agent", "Power systems"],
+      "topics": [
+        "Hybrid iteration",
+        "ADP & RL",
+        "Multi-agent",
+        "Power systems"
+      ],
       "source": "cv"
     },
     {
@@ -83,7 +105,10 @@
       "venue": "Automatica",
       "details": "vol. 157, art. 111261",
       "doi": "10.1016/j.automatica.2023.111261",
-      "topics": ["Hybrid iteration", "ADP & RL"],
+      "topics": [
+        "Hybrid iteration",
+        "ADP & RL"
+      ],
       "source": "cv"
     },
     {
@@ -95,7 +120,9 @@
       "venue": "Journal of the Franklin Institute",
       "details": "vol. 356, no. 10, pp. 5541–5572",
       "doi": "10.1016/j.jfranklin.2019.04.029",
-      "topics": ["Observers & LPV"],
+      "topics": [
+        "Observers & LPV"
+      ],
       "source": "cv"
     },
     {
@@ -106,7 +133,10 @@
       "authors": "O. Qasem, W. Gao, K. G. Vamvoudakis, H. Gutierrez",
       "venue": "65th IEEE Conference on Decision and Control (CDC)",
       "details": "Honolulu, Hawaii, USA",
-      "topics": ["Hybrid iteration", "ADP & RL"],
+      "topics": [
+        "Hybrid iteration",
+        "ADP & RL"
+      ],
       "source": "cv"
     },
     {
@@ -118,7 +148,10 @@
       "venue": "23rd IEEE International Multi-Conference on Systems, Signals & Devices (SSD)",
       "details": "Catania, Italy, pp. 1275–1280",
       "doi": "10.1109/SSD69655.2026.11559056",
-      "topics": ["ADP & RL", "Robotics & aerospace"],
+      "topics": [
+        "ADP & RL",
+        "Robotics & aerospace"
+      ],
       "source": "cv"
     },
     {
@@ -130,7 +163,9 @@
       "venue": "23rd IEEE International Multi-Conference on Systems, Signals & Devices (SSD)",
       "details": "Catania, Italy, pp. 590–594",
       "doi": "10.1109/SSD69655.2026.11558962",
-      "topics": ["Communications & AI"],
+      "topics": [
+        "Communications & AI"
+      ],
       "source": "cv"
     },
     {
@@ -142,7 +177,9 @@
       "venue": "23rd IEEE International Multi-Conference on Systems, Signals & Devices (SSD)",
       "details": "Catania, Italy, pp. 163–167",
       "doi": "10.1109/SSD69655.2026.11559072",
-      "topics": ["Communications & AI"],
+      "topics": [
+        "Communications & AI"
+      ],
       "source": "cv"
     },
     {
@@ -154,7 +191,9 @@
       "venue": "22nd IEEE International Multi-Conference on Systems, Signals & Devices (SSD)",
       "details": "pp. 115–120",
       "doi": "10.1109/SSD64182.2025.10989895",
-      "topics": ["ADP & RL"],
+      "topics": [
+        "ADP & RL"
+      ],
       "source": "cv"
     },
     {
@@ -166,7 +205,9 @@
       "venue": "22nd IEEE International Multi-Conference on Systems, Signals & Devices (SSD)",
       "details": "Monastir, Tunisia, pp. 1169–1173",
       "doi": "10.1109/SSD64182.2025.10989881",
-      "topics": ["Communications & AI"],
+      "topics": [
+        "Communications & AI"
+      ],
       "source": "cv"
     },
     {
@@ -178,7 +219,10 @@
       "venue": "63rd IEEE Conference on Decision and Control (CDC)",
       "details": "",
       "doi": "10.1109/CDC56724.2024.10886087",
-      "topics": ["Hybrid iteration", "ADP & RL"],
+      "topics": [
+        "Hybrid iteration",
+        "ADP & RL"
+      ],
       "source": "web"
     },
     {
@@ -189,7 +233,9 @@
       "authors": "O. Qasem, W. Gao",
       "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
       "details": "Yokohama, Japan",
-      "topics": ["ADP & RL"],
+      "topics": [
+        "ADP & RL"
+      ],
       "source": "cv"
     },
     {
@@ -201,7 +247,9 @@
       "venue": "21st IEEE International Multi-Conference on Systems, Signals & Devices (SSD)",
       "details": "",
       "doi": "10.1109/SSD61670.2024.10548472",
-      "topics": ["Communications & AI"],
+      "topics": [
+        "Communications & AI"
+      ],
       "source": "cv"
     },
     {
@@ -213,7 +261,10 @@
       "venue": "12th IEEE Data Driven Control and Learning Systems Conference (DDCLS)",
       "details": "",
       "award": "Best Paper Award",
-      "topics": ["Hybrid iteration", "ADP & RL"],
+      "topics": [
+        "Hybrid iteration",
+        "ADP & RL"
+      ],
       "source": "cv"
     },
     {
@@ -226,7 +277,10 @@
       "details": "Logan, Utah, USA, Paper SSC23-WP1-21",
       "award": "Best Paper Award",
       "arxiv": "2307.09428",
-      "topics": ["ADP & RL", "Robotics & aerospace"],
+      "topics": [
+        "ADP & RL",
+        "Robotics & aerospace"
+      ],
       "source": "cv"
     },
     {
@@ -238,7 +292,10 @@
       "venue": "33rd AAS/AIAA Space Flight Mechanics Meeting",
       "details": "Austin, Texas, USA, Paper AAS 23-221",
       "arxiv": "2301.12489",
-      "topics": ["ADP & RL", "Robotics & aerospace"],
+      "topics": [
+        "ADP & RL",
+        "Robotics & aerospace"
+      ],
       "source": "cv"
     },
     {
@@ -250,7 +307,11 @@
       "venue": "61st IEEE Conference on Decision and Control (CDC)",
       "details": "Cancún, Mexico, pp. 2538–2543",
       "doi": "10.1109/CDC51059.2022.9993124",
-      "topics": ["ADP & RL", "Multi-agent", "Observers & LPV"],
+      "topics": [
+        "ADP & RL",
+        "Multi-agent",
+        "Observers & LPV"
+      ],
       "source": "cv"
     },
     {
@@ -262,8 +323,43 @@
       "venue": "IEEE Symposium Series on Computational Intelligence (SSCI)",
       "details": "Orlando, FL, USA, pp. 1–7",
       "doi": "10.1109/SSCI50451.2021.9660016",
-      "topics": ["Hybrid iteration", "ADP & RL"],
+      "topics": [
+        "Hybrid iteration",
+        "ADP & RL"
+      ],
       "source": "cv"
+    },
+    {
+      "type": "thesis",
+      "degree": "phd",
+      "status": "published",
+      "year": 2023,
+      "title": "Improving the Learning Efficiency of Adaptive Optimal Control in Information-Limited Environments",
+      "authors": "O. Qasem",
+      "venue": "Ph.D. dissertation, Florida Institute of Technology",
+      "details": "Mechanical and Civil Engineering; advisors: H. M. Gutierrez and W. Gao",
+      "url": "https://repository.fit.edu/etd/1238",
+      "pdf": "https://repository.fit.edu/cgi/viewcontent.cgi?article=2238&context=etd",
+      "topics": [
+        "Hybrid iteration",
+        "ADP & RL",
+        "Multi-agent"
+      ],
+      "source": "manual"
+    },
+    {
+      "type": "thesis",
+      "degree": "msc",
+      "status": "published",
+      "year": 2018,
+      "title": "Observer Design for LPV Systems with One-Sided Lipschitz Nonlinearities and Disturbances",
+      "authors": "O. Qasem",
+      "venue": "M.Sc. thesis, Kuwait University",
+      "details": "Electrical Engineering; advisor: A. Abdullah",
+      "topics": [
+        "Observers & LPV"
+      ],
+      "source": "manual"
     }
   ]
 }

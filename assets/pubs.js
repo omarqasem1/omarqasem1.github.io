@@ -7,7 +7,8 @@
   var TYPES = [
     { key: 'journal', label: 'Journal articles' },
     { key: 'conference', label: 'Conference papers' },
-    { key: 'preprint', label: 'Preprints' }
+    { key: 'preprint', label: 'Preprints' },
+    { key: 'thesis', label: 'Theses' }
   ];
   var state = { q: '', type: 'all', topic: 'all', year: 'all' };
   var pubs = [];
@@ -27,10 +28,13 @@
     var first = (p.authors.split(',')[0] || 'paper').trim().split(' ').pop();
     var key = slug(first) + p.year + slug(p.title.split(' ')[0]);
     var authors = p.authors.split(',').map(function (a) { return a.trim(); }).join(' and ');
-    var kind = p.type === 'journal' ? 'article' : (p.type === 'conference' ? 'inproceedings' : 'misc');
+    var kind = p.type === 'journal' ? 'article' : p.type === 'conference' ? 'inproceedings' :
+      p.type === 'thesis' ? (p.degree === 'phd' ? 'phdthesis' : 'mastersthesis') : 'misc';
+    var school = p.type === 'thesis' ? p.venue.replace(/^.*?,\s*/, '') : '';
     var lines = ['@' + kind + '{' + key + ',',
       '  title = {' + p.title + '},',
       '  author = {' + authors + '},',
+      school ? '  school = {' + school + '},' :
       '  ' + (kind === 'article' ? 'journal' : (kind === 'inproceedings' ? 'booktitle' : 'howpublished')) + ' = {' + p.venue + '},',
       '  year = {' + p.year + '}'];
     if (p.doi) lines[lines.length - 1] += ',', lines.push('  doi = {' + p.doi + '}');
@@ -54,6 +58,7 @@
     var links = [];
     if (p.doi) links.push('<a href="https://doi.org/' + esc(p.doi) + '" target="_blank" rel="noopener">DOI</a>');
     if (p.arxiv) links.push('<a href="https://arxiv.org/abs/' + esc(p.arxiv) + '" target="_blank" rel="noopener">arXiv</a>');
+    if (p.url) links.push('<a href="' + esc(p.url) + '" target="_blank" rel="noopener">Repository</a>');
     if (p.pdf) links.push('<a href="' + esc(p.pdf) + '" target="_blank" rel="noopener">PDF</a>');
     var btns = '';
     if (p.abstract) btns += '<button type="button" class="pub-btn" data-act="abs" data-i="' + i + '" aria-expanded="false">Abstract</button>';
