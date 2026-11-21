@@ -96,3 +96,21 @@
   .icons a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(219,229,247,.35);color:#fff;transition:background .15s,color .15s,border-color .15s}
   .icons a:hover{background:var(--accent);border-color:var(--accent);color:var(--ink)}
   .icons svg{width:20px;height:20px}
+
+  /* News */
+  .news-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.75rem}
+  .news-item{background:var(--card);border-radius:12px;padding:1.1rem 1.5rem;display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;align-items:baseline}
+  .news-item p{margin:0;flex:1 1 420px;min-width:0}
+  .tag{flex:0 0 auto;min-width:6.5rem;text-align:center;padding:.2rem .7rem;border-radius:999px;font-size:.8rem;font-weight:600;background:#e3eaf7;color:var(--link)}
+  .tag-award,.tag-recognition{background:#fdecc8;color:#7a4a00}
+  .tag-appointment,.tag-milestone{background:#dff3ea;color:#1d5c3f}
+  .news-year h2{margin-bottom:1rem}
+  /* Teaching */
+  .teach-intro{margin:0 0 1rem;color:var(--muted)}
+  .teach-chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+  .teach-chips li{display:flex;flex-direction:column;gap:.2rem;padding:1rem 1.2rem}
+  .teach-chips b{color:var(--link);font-size:.85rem}
+  .course-list{list-style:none;margin:.75rem 0 0;padding:0;display:flex;flex-direction:column;gap:.35rem;color:var(--muted)}
+  .course-list li{display:grid;grid-template-columns:5.4rem 1fr;gap:.5rem}
+  .course-list li:not(:has(b)){display:block}
+  .course-list b{color:var(--ink);font-weight:600}

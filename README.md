@@ -8,6 +8,8 @@ Omar Qasem's academic homepage. It's plain HTML for GitHub Pages, so there's no 
 |---|---|
 | `index.html` | Home page. Search for `EDIT:` to find what still needs filling in. |
 | `publications.html` | Full publication list. Instructions for adding a paper are inside the file. |
+| `news.html` | News page, grouped by year. Instructions for adding an item are inside the file. |
+| `teaching.html` | Full course list. |
 | `style.css` | Shared look for both pages. Colors are in the `:root` block at the top. |
 | `CNAME` | Tells GitHub your domain: `www.omarqasem.com`. Leave as is. |
 | `images/photo.jpg` | Your portrait (add it). The "OQ" initials show until you do. |
