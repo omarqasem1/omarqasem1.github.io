@@ -7,7 +7,10 @@ Omar Qasem's academic homepage. It's plain HTML for GitHub Pages, so there's no 
 | File | What it is |
 |---|---|
 | `index.html` | Home page. Search for `EDIT:` to find what still needs filling in. |
-| `publications.html` | Full publication list. Instructions for adding a paper are inside the file. |
+| `publications.html` | Publications page with search and filters. The list itself lives in `data/publications.json`. |
+| `data/publications.json` | All publications. A weekly job adds new papers from ORCID/OpenAlex, plus abstracts and BibTeX. |
+| `assets/pubs.js`, `assets/site.js` | Search/filters, dark mode, and fade-in effects. No need to edit. |
+| `scripts/update_publications.py`, `.github/workflows/update-publications.yml` | The weekly publication update (runs Mondays; run it any time from the Actions tab). |
 | `news.html` | News page, grouped by year. Instructions for adding an item are inside the file. |
 | `teaching.html` | Full course list. |
 | `services.html` | Technical committees, IEEE membership, and journal reviewing. |
@@ -45,3 +48,15 @@ DNS changes can take anywhere from a few minutes to 24 hours. Once GitHub shows 
 ## Updating later
 
 Open a file on GitHub, click the pencil icon, edit, and commit. The live site updates within a minute or two.
+
+## Adding or fixing a publication
+
+Open `data/publications.json`, copy one entry (from `{` to `},`), paste it at the top of the list, and edit the fields:
+`type` (journal / conference / preprint), `status` (published / accepted / in press), `year`, `title`, `authors`, `venue`, `details`, `doi`, `topics`.
+Optional: `award`, `arxiv`, `pdf`, `abstract`.
+
+To hide an automatically added paper for good, delete its entry and put its DOI in `exclude_dois`.
+
+## Visitor statistics
+
+The site sends anonymous page counts to GoatCounter. Sign up once at goatcounter.com with the code `omarqasem`, then see your statistics at https://omarqasem.goatcounter.com.

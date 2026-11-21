@@ -11,6 +11,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<meta name="color-scheme" content="light dark">
+
 </head>
 <body>
 
@@ -27,6 +30,7 @@
         <a href="services.html">Services</a>
         <a href="index.html#contact">Contact</a>
       </div>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg></button>
     </nav>
     <div class="page-hero">
       <p class="eyebrow">Courses</p>
@@ -83,5 +87,7 @@
 
 <footer class="wrap">© 2026 Omar Qasem · <a href="index.html">Back to home</a></footer>
 
+<script src="assets/site.js"></script>
+<script data-goatcounter="https://omarqasem.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
