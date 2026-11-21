@@ -1,0 +1,89 @@
+/* Omar Qasem homepage styles. Colors live in :root below. */
+  /* ===== Colors: change these to restyle the whole site ===== */
+  :root{
+    --navy:#0b2a5b; --navy-2:#183d78; --accent:#f5a524;
+    --bg:#f4f6fa; --card:#ffffff; --ink:#121826; --muted:#4a5468;
+    --link:#0b3d91; --on-navy:#dbe5f7; --on-navy-2:#b8c7e3;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+  a{color:var(--link)} a:hover{color:#072a66}
+  h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.15}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 1.5rem}
+
+  /* Header + hero */
+  .hero{background:var(--navy);color:#fff}
+  nav{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;justify-content:space-between;padding:1.25rem 0}
+  .logo{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:1.25rem;color:#fff;text-decoration:none}
+  .nav-links{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem}
+  .nav-links a{color:var(--on-navy);text-decoration:none;font-weight:500;font-size:.95rem;padding:.4rem 0}
+  .nav-links a:hover{color:#fff}
+  .hero-body{display:flex;flex-wrap:wrap;gap:3rem;align-items:center;padding:3.5rem 0 4.5rem}
+  .hero-text{flex:1 1 520px;min-width:0}
+  .eyebrow{margin:0;font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  .hero h1{margin:.75rem 0 0;font-weight:700;font-size:clamp(2.6rem,7vw,3.75rem)}
+  .tagline{margin:1.25rem 0 0;font-size:1.2rem;color:var(--on-navy);max-width:36rem}
+  .meta{margin:.75rem 0 0;color:var(--on-navy-2)}
+  .buttons{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.75rem}
+  .btn{display:inline-flex;align-items:center;min-height:44px;padding:0 1.4rem;border-radius:8px;font-weight:600;text-decoration:none}
+  .btn-primary{background:var(--accent);color:var(--ink)} .btn-primary:hover{color:var(--ink);filter:brightness(1.05)}
+  .btn-ghost{border:1.5px solid #8ea6d1;color:#fff} .btn-ghost:hover{color:#fff;background:rgba(255,255,255,.06)}
+  .photo{flex:0 0 260px;height:300px;border-radius:16px;background:var(--navy-2);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .photo span{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:4rem;color:var(--on-navy-2)}
+  .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+  /* Sections */
+  main section{padding-top:4rem}
+  main h2{margin:0 0 1.5rem;font-weight:700;font-size:2rem}
+  .about p{max-width:52rem;margin:0 0 1rem;color:#2b3345;font-size:1.05rem}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.25rem}
+  .card{background:var(--card);border-radius:14px;padding:1.75rem;box-shadow:0 1px 3px rgba(18,24,38,.08)}
+  .card .num{margin:0;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:.9rem;color:var(--link)}
+  .card h3{margin:.5rem 0;font-size:1.2rem;font-weight:600;font-family:Inter,sans-serif}
+  .card p{margin:0;color:var(--muted)}
+
+  .pub-head{display:flex;flex-wrap:wrap;gap:1rem;align-items:baseline;justify-content:space-between;margin-bottom:1.5rem}
+  .pub-head h2{margin:0}
+  .pub-group{margin:0 0 .75rem;font-size:.85rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .pubs{list-style:none;margin:0 0 2rem;padding:0;display:flex;flex-direction:column;gap:.75rem}
+  .pub{background:var(--card);border-radius:12px;padding:1.2rem 1.5rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between}
+  .pub div{flex:1 1 480px;min-width:0}
+  .pub .title{margin:0;font-weight:600}
+  .pub .venue{margin:.25rem 0 0;color:var(--muted);font-size:.95rem}
+  .pub .links{margin:.4rem 0 0;font-size:.9rem;font-weight:600}
+  .year{padding:.25rem .75rem;border-radius:999px;background:#e3eaf7;color:var(--link);font-weight:600;font-size:.85rem}
+
+  .chips{display:flex;flex-wrap:wrap;gap:.75rem;list-style:none;margin:0;padding:0}
+  .chips li{padding:.7rem 1.2rem;border-radius:10px;background:var(--card);font-weight:500}
+
+  .contact{margin-top:4rem;background:var(--navy);color:#fff;border-radius:16px;padding:2.5rem;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between}
+  .contact h2{margin:0;font-size:1.75rem}
+  .contact p{margin:.5rem 0 0;color:var(--on-navy)}
+  .profiles{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;margin-top:1rem}
+  .profiles a{color:var(--on-navy);font-weight:500}
+  .profiles a:hover{color:#fff}
+  footer{padding:2rem 0;font-size:.85rem;color:#5b6478}
+
+  @media (max-width:640px){
+    .hero-body{padding:2rem 0 3rem;gap:2rem}
+    .photo{flex-basis:100%;height:280px;order:-1;max-width:240px}
+    .contact{padding:1.75rem}
+    main h2{font-size:1.7rem}
+  }
+
+  /* Shared bits */
+  .nav-links a[aria-current="page"]{color:#fff;box-shadow:inset 0 -2px 0 var(--accent)}
+  .alt-email{margin:.6rem 0 0;font-size:.9rem;color:var(--on-navy-2)}
+  .alt-email a{color:var(--on-navy)}
+
+  /* Publications page */
+  .page-hero{padding:2rem 0 3rem}
+  .page-hero h1{margin:.5rem 0 0;font-weight:700;font-size:clamp(2.2rem,6vw,3rem)}
+  .page-hero p{margin:1rem 0 0;color:var(--on-navy);max-width:40rem}
+  .page-hero .profiles{margin-top:1.25rem}
+  .jump{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 2rem;padding:0;list-style:none}
+  .jump a{display:inline-flex;align-items:center;min-height:40px;padding:0 1rem;border-radius:999px;background:var(--card);text-decoration:none;font-weight:600;font-size:.9rem}
+  .pub-section h2{display:flex;align-items:baseline;gap:.75rem}
+  .count{font-family:Inter,sans-serif;font-size:1rem;font-weight:600;color:var(--muted)}
+  footer.wrap{padding-top:2rem;padding-bottom:2rem}
