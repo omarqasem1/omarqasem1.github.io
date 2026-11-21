@@ -90,3 +90,9 @@
   .count{font-family:Inter,sans-serif;font-size:1rem;font-weight:600;color:var(--muted)}
   footer.wrap{padding-top:2rem;padding-bottom:2rem}
   .hero h1 .degree{font-weight:500;color:var(--on-navy)}
+
+  /* Profile icons (Google Scholar, ORCID, dblp: Simple Icons, CC0; LinkedIn: Font Awesome Free, CC BY 4.0) */
+  .icons{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
+  .icons a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(219,229,247,.35);color:#fff;transition:background .15s,color .15s,border-color .15s}
+  .icons a:hover{background:var(--accent);border-color:var(--accent);color:var(--ink)}
+  .icons svg{width:20px;height:20px}

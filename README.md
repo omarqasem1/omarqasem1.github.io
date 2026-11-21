@@ -11,7 +11,7 @@ Omar Qasem's academic homepage. It's plain HTML for GitHub Pages, so there's no 
 | `style.css` | Shared look for both pages. Colors are in the `:root` block at the top. |
 | `CNAME` | Tells GitHub your domain: `www.omarqasem.com`. Leave as is. |
 | `images/photo.jpg` | Your portrait (add it). The "OQ" initials show until you do. |
-| `cv.pdf` | Your CV (add it, then un-comment the "Download CV" button in index.html). |
+| `cv.pdf` | Your public CV (personal details removed). Replace it with a new file of the same name to update. |
 
 ## 1. Publish on GitHub Pages
 
