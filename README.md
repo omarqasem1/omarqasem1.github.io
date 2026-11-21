@@ -8,7 +8,7 @@ Omar Qasem's academic homepage. It's plain HTML for GitHub Pages, so there's no 
 |---|---|
 | `index.html` | Home page. Search for `EDIT:` to find what still needs filling in. |
 | `publications.html` | Publications page with search and filters. The list itself lives in `data/publications.json`. |
-| `data/publications.json` | All publications. A weekly job adds new papers from ORCID/OpenAlex and their abstracts. |
+| `data/publications.json` | All publications. A weekly job adds new papers from ORCID/OpenAlex, their abstracts, and BibTeX built from the publisher record. |
 | `assets/pubs.js`, `assets/site.js` | Search/filters, dark mode, and fade-in effects. No need to edit. |
 | `scripts/update_publications.py`, `.github/workflows/update-publications.yml` | The weekly publication update (runs Mondays; run it any time from the Actions tab). |
 | `news.html` | News page, grouped by year. Instructions for adding an item are inside the file. |
@@ -55,7 +55,7 @@ Open `data/publications.json`, copy one entry (from `{` to `},`), paste it at th
 `type` (journal / conference / preprint), `status` (published / accepted / in press), `year`, `title`, `authors`, `venue`, `details`, `doi`, `topics`.
 Optional: `award`, `arxiv`, `pdf`, `abstract`, `bibtex`.
 
-`bibtex` must be the publisher's own export (IEEE Xplore: Cite This → BibTeX; ScienceDirect: Cite → Export citation to BibTeX), pasted unchanged. The "Copy BibTeX" button only appears for papers that have it.
+`bibtex` holds the entry the "Copy BibTeX" button copies. Most were built from the record each publisher deposited with Crossref; the Franklin Institute entry is ScienceDirect's own export. To use a publisher's export instead (IEEE Xplore: Cite This → BibTeX), paste it in place of the existing text.
 
 To hide an automatically added paper for good, delete its entry and put its DOI in `exclude_dois`.
 

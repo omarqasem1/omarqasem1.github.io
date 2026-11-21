@@ -17,7 +17,9 @@
         "Power systems",
         "ADP & RL"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@ARTICLE{paudel2026non,\n  author={Paudel, S. and Davari, M. and Gao, W. and Blaabjerg, F. and Sadabadi, M. S. and Liserre, M. and Karimi-Ghartemani, M. and Qasem, O. and Al-Haddad, K. and Chai, T.},\n  journal={IEEE Journal of Emerging and Selected Topics in Industrial Electronics},\n  title={Non-Minimum-Phase DC-Bus Voltage Dynamics and Control of VSC-Based AC/DC Systems: A Unified Review of Classical, Advanced, and Emerging Learning- and AI-Based Control Strategies and Applications},\n  year={2026},\n  note={accepted for publication}}",
+      "bibtex_source": "built from the CV/repository record"
     },
     {
       "type": "journal",
@@ -33,7 +35,9 @@
         "ADP & RL",
         "Power systems"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@ARTICLE{liu2026adaptive,\n  author={Liu, Sitong and Davari, Masoud and Gao, Weinan and Qasem, Omar and Chai, Tianyou},\n  journal={IEEE Transactions on Industrial Electronics},\n  title={Adaptive Optimal Output Regulation Based on Adaptive Dynamic Programming and Output-Feedback Hybrid Iteration: Theory and Applications Across Diverse Time Scales From PMDC Motor Drives to IBR-Based Microgrids},\n  year={2026},\n  volume={73},\n  number={10},\n  pages={15154-15168},\n  month=oct,\n  doi={10.1109/TIE.2026.3679825}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "journal",
@@ -49,7 +53,9 @@
         "ADP & RL",
         "Power systems"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@ARTICLE{davari2025reinforcement,\n  author={Davari, Masoud and Qasem, Omar and Gao, Weinan and Blaabjerg, Frede and Kotsampopoulos, Panos C. and Lauss, Georg and Hatziargyriou, Nikos D.},\n  journal={IEEE Transactions on Industrial Electronics},\n  title={A Reinforcement-Learning, Optimal Approach to In Situ Power Hardware-in-the-Loop Interface Control for Testing Inverter-Based Resources: Theory and Application of the Adaptive Dynamic Programming Based on the Hybrid Iteration to Tackle Uncertain Dynamics},\n  year={2025},\n  volume={72},\n  number={6},\n  pages={5867-5883},\n  month=jun,\n  doi={10.1109/TIE.2024.3426038}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "journal",
@@ -65,7 +71,9 @@
         "ADP & RL",
         "Robotics & aerospace"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@ARTICLE{qasem2024experimental,\n  author={Qasem, Omar and Gutierrez, Hector and Gao, Weinan},\n  journal={IEEE Transactions on Industrial Electronics},\n  title={Experimental Validation of Data-Driven Adaptive Optimal Control for Continuous-Time Systems via Hybrid Iteration: An Application to Rotary Inverted Pendulum},\n  year={2024},\n  volume={71},\n  number={6},\n  pages={6210-6220},\n  month=jun,\n  doi={10.1109/TIE.2023.3292873}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "journal",
@@ -79,7 +87,9 @@
       "topics": [
         "ADP & RL"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@ARTICLE{qasem2024robusta,\n  author={Qasem, Omar and Gao, Weinan},\n  journal={IEEE Transactions on Automation Science and Engineering},\n  title={Robust Policy Iteration of Uncertain Interconnected Systems With Imperfect Data},\n  year={2024},\n  volume={21},\n  number={2},\n  pages={1214-1222},\n  month=apr,\n  doi={10.1109/TASE.2023.3276369}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "journal",
@@ -96,7 +106,9 @@
         "Multi-agent",
         "Power systems"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@ARTICLE{qasem2024hybrid,\n  author={Qasem, Omar and Davari, Masoud and Gao, Weinan and Kirk, Daniel R. and Chai, Tianyou},\n  journal={IEEE Transactions on Industrial Electronics},\n  title={Hybrid Iteration ADP Algorithm to Solve Cooperative, Optimal Output Regulation Problem for Continuous-Time, Linear, Multiagent Systems: Theory and Application in Islanded Modern Microgrids With IBRs},\n  year={2024},\n  volume={71},\n  number={1},\n  pages={834-845},\n  month=jan,\n  doi={10.1109/TIE.2023.3247734}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "journal",
@@ -111,7 +123,9 @@
         "Hybrid iteration",
         "ADP & RL"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@ARTICLE{qasem2023adaptivea,\n  author={Qasem, Omar and Gao, Weinan and Vamvoudakis, Kyriakos G.},\n  journal={Automatica},\n  title={Adaptive Optimal Control of Continuous-Time Nonlinear Affine Systems via Hybrid Iteration},\n  year={2023},\n  volume={157},\n  pages={111261},\n  month=nov,\n  doi={10.1016/j.automatica.2023.111261}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "journal",
@@ -141,7 +155,9 @@
         "Hybrid iteration",
         "ADP & RL"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{qasem2026adaptivea,\n  author={Qasem, Omar and Gao, Weinan and Vamvoudakis, Kyriakos G. and Gutierrez, Hector},\n  booktitle={2026 IEEE 65th Conference on Decision and Control (CDC)},\n  title={Adaptive Optimal Control of Continuous-Time Nonlinear Systems via Hybrid Iteration: An Adaptive Dynamic Programming Approach},\n  year={2026},\n  address={Honolulu, HI, USA},\n  note={in press}}",
+      "bibtex_source": "built from the CV/repository record"
     },
     {
       "type": "conference",
@@ -156,7 +172,9 @@
         "ADP & RL",
         "Robotics & aerospace"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{qasem2026adaptiveb,\n  author={Qasem, Omar and Gutierrez, Hector and Daoud, Omar R. and Alja'afreh, Saqer S.},\n  booktitle={2026 IEEE 23rd International Multi-Conference on Systems, Signals \\& Devices (SSD)},\n  title={Adaptive Optimal Output Regulation and Reinforcement Learning Technique to Solve the Autonomous Satellite Docking Problem},\n  year={2026},\n  pages={1275-1280},\n  month=mar,\n  address={Catania, Italy},\n  doi={10.1109/SSD69655.2026.11559056}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "conference",
@@ -170,7 +188,9 @@
       "topics": [
         "Communications & AI"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{daoud2026ppo,\n  author={Daoud, Omar R. and Fenjan, Ali and Alja'afreh, Saqer S. and Damati, Ahlam A. and Qasem, Omar and Teekaraman, Yuvaraja and Kuppusamy, Ramya},\n  booktitle={2026 IEEE 23rd International Multi-Conference on Systems, Signals \\& Devices (SSD)},\n  title={PPO-Driven IoD-V2V Framework for Joint UAV Altitude Power and PAPR Optimization},\n  year={2026},\n  pages={590-594},\n  month=mar,\n  address={Catania, Italy},\n  doi={10.1109/SSD69655.2026.11558962}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "conference",
@@ -184,7 +204,9 @@
       "topics": [
         "Communications & AI"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{aljaafreh2026mapping,\n  author={Alja'afreh, Saqer S. and Altakhaineh, Amjaad T. and Daoud, Omar R. and Qasem, Omar and Fenjan, Ali and Matarneh, Aser M.},\n  booktitle={2026 IEEE 23rd International Multi-Conference on Systems, Signals \\& Devices (SSD)},\n  title={Mapping the Use of Machine Learning in Antenna Design: A Bibliometric Study of Dominant Algorithms and Prevalent Structures and Frequency Bands},\n  year={2026},\n  pages={163-167},\n  month=mar,\n  address={Catania, Italy},\n  doi={10.1109/SSD69655.2026.11559072}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "conference",
@@ -198,7 +220,9 @@
       "topics": [
         "ADP & RL"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{qasem2025reinforcement,\n  author={Qasem, Omar and Gao, Weinan and Daoud, Omar R.},\n  booktitle={2025 IEEE 22nd International Multi-Conference on Systems, Signals \\& Devices (SSD)},\n  title={Reinforcement Learning-Based Optimal Control for Continuous-Time Quantized Systems via Adaptive Dynamic Programming},\n  year={2025},\n  pages={115-120},\n  month=feb,\n  address={Monastir, Tunisia},\n  doi={10.1109/SSD64182.2025.10989895}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "conference",
@@ -212,7 +236,9 @@
       "topics": [
         "Communications & AI"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{daoud2025machine,\n  author={Daoud, O. and Hamarsheh, Q. and Damati, A. and Al Jaafrah, S. and Qasem, O. and Al-Khawaldah, M.},\n  booktitle={2025 IEEE 22nd International Multi-Conference on Systems, Signals \\& Devices (SSD)},\n  title={Machine Learning to Enhance the V2V Communication-Based IoD Using Companding Dataset},\n  year={2025},\n  pages={1169-1173},\n  month=feb,\n  address={Monastir, Tunisia},\n  doi={10.1109/SSD64182.2025.10989881}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "conference",
@@ -225,7 +251,9 @@
       "topics": [
         "ADP & RL"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{qasem2024robustb,\n  author={Qasem, Omar and Gao, Weinan},\n  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},\n  title={Robust Policy Iteration of Uncertain Interconnected Systems With Imperfect Data},\n  year={2024},\n  address={Yokohama, Japan}}",
+      "bibtex_source": "built from the CV/repository record"
     },
     {
       "type": "conference",
@@ -239,7 +267,9 @@
       "topics": [
         "Communications & AI"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{daoud2024supporting,\n  author={Daoud, Omar R. and Hamarsheh, Qadri J. and Damati, Ahlam A. and Qasem, Omar and Al-Khawaldah, M.},\n  booktitle={2024 21st International Multi-Conference on Systems, Signals \\& Devices (SSD)},\n  title={Supporting V2V Communications-Based Internet of Drones},\n  year={2024},\n  pages={721-726},\n  month=apr,\n  address={Erbil, Iraq},\n  doi={10.1109/SSD61670.2024.10548472}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "conference",
@@ -254,7 +284,9 @@
         "Hybrid iteration",
         "ADP & RL"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{qasem2023adaptiveb,\n  author={Qasem, Omar and Gao, Weinan and Gutierrez, Hector},\n  booktitle={2023 IEEE 12th Data Driven Control and Learning Systems Conference (DDCLS)},\n  title={Adaptive Optimal Control for Discrete-Time Linear Systems via Hybrid Iteration},\n  year={2023}}",
+      "bibtex_source": "built from the CV/repository record"
     },
     {
       "type": "conference",
@@ -270,7 +302,9 @@
         "ADP & RL",
         "Robotics & aerospace"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{cotta2023control,\n  author={Cotta, Joao Leonardo Silva and Qasem, Omar and Pereira, Paula do Vale and Gutierrez, Hector},\n  booktitle={Proceedings of the 37th Annual Small Satellite Conference},\n  title={Control of Small Spacecraft by Optimal Output Regulation: A Reinforcement Learning Approach},\n  year={2023},\n  address={Logan, UT, USA},\n  note={Paper SSC23-WP1-21}}",
+      "bibtex_source": "built from the CV/repository record"
     },
     {
       "type": "conference",
@@ -285,7 +319,9 @@
         "ADP & RL",
         "Robotics & aerospace"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{qasem2023autonomous,\n  author={Qasem, Omar and Tiwari, Madhur and Gutierrez, Hector},\n  booktitle={33rd AAS/AIAA Space Flight Mechanics Meeting},\n  title={Autonomous Satellite Docking via Adaptive Optimal Output Regulation: A Reinforcement Learning Approach},\n  year={2023},\n  address={Austin, TX, USA},\n  note={Paper AAS 23-221}}",
+      "bibtex_source": "built from the CV/repository record"
     },
     {
       "type": "conference",
@@ -301,7 +337,9 @@
         "Multi-agent",
         "Observers & LPV"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{qasem2022adaptive,\n  author={Qasem, Omar and Jebari, Khalid and Gao, Weinan},\n  booktitle={2022 IEEE 61st Conference on Decision and Control (CDC)},\n  title={Adaptive Dynamic Programming and Data-Driven Cooperative Optimal Output Regulation with Adaptive Observers},\n  year={2022},\n  pages={2538-2543},\n  month=dec,\n  address={Cancun, Mexico},\n  doi={10.1109/CDC51059.2022.9993124}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "conference",
@@ -316,7 +354,9 @@
         "Hybrid iteration",
         "ADP & RL"
       ],
-      "source": "cv"
+      "source": "cv",
+      "bibtex": "@INPROCEEDINGS{qasem2021adaptive,\n  author={Qasem, Omar and Gao, Weinan and Bian, Tao},\n  booktitle={2021 IEEE Symposium Series on Computational Intelligence (SSCI)},\n  title={Adaptive Optimal Control of Continuous-Time Linear Systems via Hybrid Iteration},\n  year={2021},\n  pages={1-7},\n  month=dec,\n  address={Orlando, FL, USA},\n  doi={10.1109/SSCI50451.2021.9660016}}",
+      "bibtex_source": "built from the publisher record (Crossref)"
     },
     {
       "type": "thesis",
@@ -334,7 +374,9 @@
         "ADP & RL",
         "Multi-agent"
       ],
-      "source": "manual"
+      "source": "manual",
+      "bibtex": "@PHDTHESIS{qasem2023improving,\n  author={Qasem, Omar Ghassan},\n  school={Florida Institute of Technology},\n  title={Improving the Learning Efficiency of Adaptive Optimal Control in Information-Limited Environments},\n  year={2023},\n  month=may,\n  address={Melbourne, FL, USA},\n  url={https://repository.fit.edu/etd/1238}}",
+      "bibtex_source": "built from the CV/repository record"
     },
     {
       "type": "thesis",
@@ -348,7 +390,9 @@
       "topics": [
         "Observers & LPV"
       ],
-      "source": "manual"
+      "source": "manual",
+      "bibtex": "@MASTERSTHESIS{qasem2018observer,\n  author={Qasem, Omar},\n  school={Kuwait University},\n  title={Observer Design for LPV Systems with One-Sided Lipschitz Nonlinearities and Disturbances},\n  year={2018},\n  address={Kuwait}}",
+      "bibtex_source": "built from the CV/repository record"
     }
   ]
 }

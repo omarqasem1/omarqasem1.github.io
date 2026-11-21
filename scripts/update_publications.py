@@ -5,7 +5,8 @@ Runs on GitHub Actions (see .github/workflows/update-publications.yml).
 1. Looks up all works linked to the ORCID iD in data/publications.json, via OpenAlex.
 2. Adds any work whose DOI (or title) is not already listed, marked source "auto".
 3. Fills in missing abstracts (from OpenAlex).
-BibTeX is never generated here: only the publisher's own Cite -> BibTeX export is stored, by hand.
+4. Builds BibTeX for new papers from the record the publisher deposited with Crossref
+   (volume, issue, pages, month, DOI). Existing BibTeX is never touched.
 Only the Python standard library is used. Nothing else on the site is touched.
 """
 import json
@@ -92,6 +93,40 @@ def openalex_works(orcid):
     return works
 
 
+MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+
+
+def bibtex_from_crossref(doi, title_fallback):
+    body = get("https://api.crossref.org/works/" + urllib.parse.quote(doi, safe="/"))
+    if not body:
+        return None
+    m = json.loads(body).get("message", {})
+    kind = {"journal-article": "ARTICLE", "proceedings-article": "INPROCEEDINGS"}.get(m.get("type"))
+    if not kind:
+        return None
+    names = []
+    for a in m.get("author", []):
+        fam, giv = a.get("family", ""), a.get("given", "")
+        names.append((fam + ", " + giv).strip(", "))
+    title = (m.get("title") or [title_fallback])[0]
+    venue = (m.get("container-title") or [""])[0].replace("&", "\\&")
+    parts = ((m.get("published-print") or m.get("published") or m.get("issued") or {}).get("date-parts") or [[None]])[0]
+    year, month = parts[0], (MONTHS[parts[1] - 1] if len(parts) > 1 and parts[1] else None)
+    first = re.sub(r"[^a-z]", "", (m.get("author") or [{}])[0].get("family", "x").lower())
+    word = next((w.lower() for w in re.findall(r"[A-Za-z]+", title) if w.lower() not in ("a", "an", "the", "on", "of", "for", "via", "and", "to", "in")), "paper")
+    f = [("author", " and ".join(names)), ("journal" if kind == "ARTICLE" else "booktitle", venue), ("title", title), ("year", str(year))]
+    for fld, val in (("volume", m.get("volume")), ("number", m.get("issue")), ("pages", (m.get("page") or "").replace("\u2013", "-"))):
+        if val:
+            f.append((fld, val))
+    if month:
+        f.append(("month", month))
+    f.append(("doi", m.get("DOI", doi)))
+    lines = ["@%s{%s%s%s," % (kind, first, year, word)]
+    for i, (k, v) in enumerate(f):
+        lines.append("  %s=%s%s" % (k, v if k == "month" else "{" + v + "}", "," if i < len(f) - 1 else "}"))
+    return "\n".join(lines)
+
+
 def main():
     with open(DATA, encoding="utf-8") as f:
         db = json.load(f)
@@ -161,6 +196,15 @@ def main():
                 p["abstract"] = abs_text
                 changed = True
                 print("  ~ abstract:", p["title"][:70])
+        if not p.get("bibtex"):
+            bib = bibtex_from_crossref(doi, p["title"])
+            if bib:
+                p["bibtex"] = bib
+                p["bibtex_source"] = "built from the publisher record (Crossref)"
+                changed = True
+                print("  ~ bibtex:", p["title"][:70])
+            time.sleep(0.5)
+
     if changed:
         with open(DATA, "w", encoding="utf-8") as f:
             json.dump(db, f, ensure_ascii=False, indent=2)
